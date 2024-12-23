@@ -169,6 +169,7 @@ class FlutterInternetSpeedTest {
 
   Future<bool> cancelTest() async {
     _isCancelled = true;
+    _isTestInProgress = false;
     return await FlutterInternetSpeedTestPlatform.instance.cancelTest();
   }
 
